@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml"
+             xmlns:h="http://xmlns.jcp.org/jsf/html"
+             xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <!-- Menu lateral -->
+    <div class="menu-lateral">
+        <img src="#{request.contextPath}/resources/img/logo-cms.png" class="logo-dash"/>
+            <hr/>
+                <ul class="mt-2">
+                    <li class="active">
+                        <a href="#{request.contextPath}/web_app/operario/inicio_operario.xhtml">
+                            <span class="icono-menu"><i class="fas fa-home"></i></span>
+                            <span class="texto-menu">Inicio</span>
+                        </a>
+
+                    </li>
+                    <hr/>
+                        <li data-toggle="collapse" data-target="#sub-menu-veh" class="">
+                            <a href="#">
+                                <span class="icono-menu"><i class="fas fa-car"></i></span>
+                                <span class="texto-menu">Vehiculos</span>
+                                <div class="arrow-menu"><i class="fas fa-angle-right"></i></div>
+                            </a>
+
+                        </li>
+
+                        <ul class="sub-menu collapse" id="sub-menu-veh">
+
+                            <li>
+                                <a href="#{request.contextPath}/web_app/operario/vehiculos/gestion_vehiculos.xhtml">
+                                    <span class="icono-menu"><i class="fas fa-circle"></i></span>
+                                    <span class="texto-menu">Gestión</span>
+                                </a>
+                            </li>
+                        </ul>
+                    
+                
+                    <!--Separador-->
+                    
+                      <li data-toggle="collapse" data-target="#sub-menu-serv" class="">
+                            <a href="#">
+                                <span class="icono-menu"><i class="fas fa-clipboard-list"></i></span>
+                                <span class="texto-menu">Servicios</span>
+                                <div class="arrow-menu"><i class="fas fa-angle-right"></i></div>
+                            </a>
+
+                        </li>
+
+                        <ul class="sub-menu collapse" id="sub-menu-serv">
+
+                            <li>
+                                <a href="#{request.contextPath}/web_app/operario/servicios/inicio_servicios.xhtml">
+                                    <span class="icono-menu"><i class="fas fa-circle"></i></span>
+                                    <span class="texto-menu">Adminisitrar</span>
+                                </a>
+                            </li>
+                        </ul>
+                    
+                     <ul class="sub-menu collapse" id="sub-menu-serv">
+
+                            <li>
+                                <a href="#{request.contextPath}/web_app/operario/servicios/inicio_servicios.xhtml">
+                                    <span class="icono-menu"><i class="fas fa-circle"></i></span>
+                                    <span class="texto-menu">Hoja Servicio</span>
+                                </a>
+                            </li>
+                        </ul>
+                    
+                    <!--Separador-->
+
+                        <li data-toggle="collapse" data-target="#sub-menu-cronograma" class="">
+                            <a href="#">
+                                <span class="icono-menu"><i class="fas fa-calendar-alt"></i></span>
+                                <span class="texto-menu">Cronograma</span>
+                                <div class="arrow-menu"><i class="fas fa-angle-right"></i></div>
+                            </a>
+
+                        </li>
+
+                        <ul class="sub-menu collapse" id="sub-menu-cronograma">
+
+                            <li>
+                                <a href="#">
+                                    <span class="icono-menu"><i class="fas fa-circle"></i></span>
+                                    <span class="texto-menu">Citas atendias</span>
+                                </a>
+                            </li>
+                        </ul>
+
+
+                        <li>
+                            <a href="#"> 
+                                <span class="icono-menu"><i class="fas fa-th-list"></i></span>
+                                <span class="texto-menu">Historial vehiculo</span>
+                            </a>
+                        </li>
+
+
+
+                </ul>
+                </div>
+
+                <!-- Menu lateral -->
+
+
+
+                </ui:fragment>
+
+
